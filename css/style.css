@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Roboto&family=Rubik&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    background-color: #0F1111;
+    
+}
+
+
+nav{
+    display: flex;
+}
+nav ul{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{
+    height: 55px;
+    }
+
+nav ul li{
+    list-style: none;
+    margin: 15px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(194, 188, 188);
+    font-family: 'Dongle', sans-serif;
+    font-size: x-large;
+}
+nav ul li a:hover{
+    color: rgb(226, 221, 221);
+    font-weight: bold;
+   
+}
+
+.search{
+      display: flex;
+      align-items: center;
+      margin: 10px 15px;
+    
+}
+
+.search input{
+    width: 671px;
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 6px 0px 0px 6px;
+}
+.search img{
+    height: 33px;
+    border-radius: 1px 6px 6px 1px;
+}
+
+.search img:hover{
+    height: 36px;
+    border-radius: 3px 6px 6px 3px;
+}
+
+.sideitems{
+    display: flex;
+    width: 27vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sideitems a{
+    text-decoration: none;
+}
+
+.sideitems img{
+    height: 30px;
+}
+
+.sideitems p{
+    color: rgb(194, 188, 188);
+    padding: 2px;
+    margin: 2px;
+    font-family: 'Dongle', sans-serif;
+    font-size: x-large;
+}
+
+.sideitems #cart img{
+    margin: 2px;
+}
+
+#cartp{
+    margin-right: 35px;
+}
+
+#profilep{
+    margin-right: 20px;
+}
+
+.sideitems p:hover{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container{
+    background-color:#dddddd;
+    min-height: calc(100vh - 60px - 8vh);
+}
+
+@keyframes slide1{
+    0%{
+        transform: translate(-8vw);
+    }
+    24%, 75%{
+        transform: translate(83vw);
+        
+    } 
+    100%{
+        transform: translate(175vw);
+    }
+}
+
+@keyframes slide2{
+    0%{
+       transform: translate(0vw);
+    }
+    100%{
+       transform: translate(100vw);
+    }
+}
+
+@keyframes slide3{
+    0%{
+        transform: translate(-175vw); 
+    }
+    55%, 100%{
+        transform: translate(-83vw);
+    }
+}
+
+.slider img{
+    display: block;
+    margin: auto;
+    width: 1290px;
+    height: 700px; 
+}
+
+.slider{
+    background-color:rgb(255, 249, 249);
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.mainpic1{
+    transform: translate(-8vw);
+    animation: slide1 ease-out 4s 2s forwards;
+}
+.mainpic2{
+    transform: translate(0vw);
+    animation: slide2 ease-out 1s 2s forwards;
+}
+.mainpic3{
+    transform: translate(-175vw);
+    animation: slide3 ease-out 2s 5s forwards;
+}
+
+.product_card{
+    background-color: white;
+    max-width: 91vw;
+    margin: auto;
+    border-radius: 7px;
+    
+}
+
+
+.carditem{
+        display: inline-flex;
+        margin: 0px 45px;
+        flex-direction: column;
+        justify-content: center;
+        
+}
+
+.carditemb{
+    display: inline-flex;
+    margin: 0px 42px;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.carditemc{
+    display: inline-flex;
+    margin: 0px 34px;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.carditem a{
+    text-decoration: none;
+}
+
+.carditemb a{
+    text-decoration: none;
+}
+
+.carditemc a{
+    text-decoration: none;
+}
+
+.cardtext{
+    font-family: 'Rubik', sans-serif;
+    font-weight:200;
+    
+}
+
+
+
+.product_card h2{
+    font-family: 'Roboto', sans-serif;
+    border-bottom: rgb(94, 94, 94);
+    border-bottom-style: solid;
+    padding: 5px 2px 7px 2px;
+    border-width: 1.5px;
+}
+
+footer{
+   
+    height: 8vh;
+    background-color: black;
+    color: white;
+}
+

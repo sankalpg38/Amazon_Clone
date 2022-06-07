@@ -1,0 +1,18 @@
+.flex_content_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mar1{
+ margin: 25px 2px;
+}
+
+.mar2{
+    margin: 6px;
+    padding: 1px;
+}
